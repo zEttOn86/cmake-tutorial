@@ -41,3 +41,60 @@ $ cmake --build .
 $ ctest -N
 $ ctest -VV
 ```
+
+### Step6
+
+### Build and Test
+```bash
+$ mkdir Step6_build
+$ cd Step6_build
+$ cmake ../Step6 -DUSE_MYMATH=ON
+$ cmake --build .
+```
+
+```bash
+$ ctest -N
+$ ctest -VV
+```
+
+### Step7
+
+### Build and Test
+```bash
+$ mkdir Step7_build && cd Step7_build
+$ cmake ../Step7 -DUSE_MYMATH=ON
+$ cmake --build .
+```
+
+```bash
+$ ctest -N
+$ ctest -VV
+```
+
+### Step8
+
+### Build and Test
+```bash
+$ mkdir Step8_build && cd Step8_build
+$ cmake ../Step8 -DUSE_MYMATH=ON
+$ ctest [-VV] -D Experimental
+```
+
+```bash
+$ ctest -N
+$ ctest -VV
+```
+
+### Step9
+
+### Build and Test
+```bash
+$ mkdir Step9_build && cd Step9_build
+$ cmake ../Step9 -DUSE_MYMATH=OFF
+$ cmake --build .
+```
+
+```bash
+$ ctest -N
+$ ctest -VV
+```
